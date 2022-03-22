@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:maxWidth="@android:dimen/notification_large_icon_width"
+    android:background="@color/stone"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_atop"
+    tools:context=".SidebarFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="52dp"
+                android:maxHeight="52dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/img_avatar"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:text="abc@gmail.com"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="My folder"
+            android:textSize="10dp"
+            android:drawableLeft="@drawable/ic_baseline_folder_24"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="shared with me"
+            android:textSize="10dp"
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Starred"
+            android:textSize="10dp"
+            android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Recent"
+            android:textSize="10dp"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="close"
+            android:layout_marginTop="50dp"
+            android:id="@+id/closebtn"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
